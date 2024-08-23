@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Paginas de BautiRo501</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2c003e;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .stars {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+            animation: animateStars 50s linear infinite;
+        }
+
+        @keyframes animateStars {
+            from { transform: translate(0, 0); }
+            to { transform: translate(-50%, -50%); }
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            padding: 40px;
+            width: 600px;
+            color: white;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            max-width: 90%;
+            overflow: auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            animation: colorChange 3s infinite;
+        }
+
+        @keyframes colorChange {
+            0% { color: #ffccff; }
+            25% { color: #ff99cc; }
+            50% { color: #cc66ff; }
+            75% { color: #cc99ff; }
+            100% { color: #ffccff; }
+        }
+
+        .content-box ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .content-box li {
+            margin: 20px 0;
+            font-size: 22px;
+            word-wrap: break-word;
+        }
+
+        .content-box a {
+            color: #ff99ff; /* Color visible y que resalta */
+            font-weight: bold;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+
+        .content-box a:hover {
+            color: #ffccff; /* Cambia a un tono más claro al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="stars"></div>
+    </div>
+    
+    <div class="content-box">
+        <h1>Bienvenid@ a la lista de páginas de BautiRo501</h1>
+        <ul>
+            <li>Juego de CLICKS: <a href="https://bautiro501.github.io/StarClicker/" target="_blank">https://bautiro501.github.io/StarClicker/</a></li>
+            <li>RandomNumber: <a href="https://bautiro501.github.io/RandomNumber/" target="_blank">https://bautiro501.github.io/RandomNumber/</a></li>
+            <li>PROXIMAMENTE</li>
+        </ul>
+    </div>
+</body>
+</html>
